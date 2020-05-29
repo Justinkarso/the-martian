@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,400;1,600&family=Roboto:wght@100;400;500;700&display=swap");
+@font-face {
+  font-family: 'Berserker';
+  src: url(../../fonts/berserker/Berserker-Regular.otf) format("opentype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background: #121212;
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 50px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 300;
+  opacity: .75;
+  font-size: 14px;
+  letter-spacing: .25em;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+
+.hero {
+  width: 100%;
+  height: 85vh;
+  background: url("../img/bg.png") center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -100px;
+}
+
+.hero .container span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  border-bottom: 2px solid #fefefe;
+  padding-bottom: 10px;
+}
+
+.hero .container h1 {
+  font-family: "Berserker", sans-serif;
+  text-transform: uppercase;
+  font-size: 62px;
+  letter-spacing: .75em;
+  margin-top: 50px;
+}
+
+.hero .container button {
+  background: transparent;
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: .25em;
+  color: #fefefe;
+  border: none;
+  padding: 20px 20px;
+  background: url("../img/button.png") center center no-repeat;
+  background-size: cover;
+}
+
+.hero .container button:hover {
+  cursor: pointer;
+  -webkit-transform: translate(0px, -2px);
+          transform: translate(0px, -2px);
+}
+
+.hero .container button:active {
+  -webkit-transform: translate(0px, 2px);
+          transform: translate(0px, 2px);
+}
+
+.hero .container button:focus {
+  outline: none;
+}
+
+.video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 450px;
+  left: 0;
+  position: absolute;
+  margin-top: -200px;
+}
+
+.video-container .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  height: 100%;
+  background: url("../img/video.png") center center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.39);
+}
+
+.video-container .video .play {
+  width: 100px;
+  height: 100px;
+  background: url("../img/play.png");
+}
+
+main {
+  background: #121212;
+  width: 100%;
+  height: auto;
+}
+
+main .container {
+  padding: 0 550px;
+}
+
+main .content {
+  padding-top: 300px;
+}
+
+main .content p {
+  font-size: 32px;
+}
+
+main .about {
+  margin-top: 125px;
+}
+
+main .about span {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: .5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-left: 7.5px solid #FF7A00;
+}
+
+main .about p {
+  margin-top: 50px;
+  font-size: 20px;
+  letter-spacing: .15em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+main .media {
+  margin-top: 125px;
+  width: 100%;
+}
+
+main .media span {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: .5em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-left: 7.5px solid #FF7A00;
+}
+
+main .media .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+main .media .wrapper .item {
+  width: 45%;
+  height: 225px;
+  background: blue;
+  margin-bottom: 75px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.39);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+}
+
+main .media .wrapper .item:nth-child(1) {
+  background: url("../img/media/1.png") center center no-repeat;
+  background-size: cover;
+}
+
+main .media .wrapper .item:nth-child(2) {
+  background: url("../img/media/2.png") center center no-repeat;
+  background-size: cover;
+}
+
+main .media .wrapper .item:nth-child(3) {
+  background: url("../img/media/3.png") center center no-repeat;
+  background-size: cover;
+}
+
+main .media .wrapper .item:nth-child(4) {
+  background: url("../img/media/4.png") center center no-repeat;
+  background-size: cover;
+}
+
+main .media .wrapper .item:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+main .media .wrapper .item:active {
+  -webkit-transform: scale(0.975);
+          transform: scale(0.975);
+}
+
+main .reviews {
+  padding: 75px;
+}
+
+main .reviews .single-review {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .reviews .single-review p {
+  font-size: 34px;
+  text-align: center;
+}
+
+main .reviews .single-review span {
+  margin-top: 15px;
+  opacity: .5;
+  letter-spacing: .25em;
+}
+/*# sourceMappingURL=main.css.map */

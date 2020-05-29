@@ -1,0 +1,15 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin title(){
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: .5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-left: 7.5px solid $theme;
+}
