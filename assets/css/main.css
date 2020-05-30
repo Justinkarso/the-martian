@@ -355,7 +355,7 @@ main .reviews .single-review span {
 }
 
 main .reviews .review-items {
-  margin-top: 75px;
+  margin-top: 150px;
 }
 
 main .reviews .review-items span {
@@ -410,6 +410,10 @@ main .reviews .review-items .wrapper .review:nth-child(even) {
 
 main .reviews .review-items .wrapper .review:nth-child(even) p {
   padding: 0 0 0 25%;
+}
+
+main .download {
+  margin-top: 75px;
 }
 
 main .download span {
