@@ -226,7 +226,7 @@ main{
         }
 
         .review-items{
-            margin-top: 75px;
+            margin-top: 150px;
             
             span{
                 @include title();
@@ -267,7 +267,7 @@ main{
     }
 
     .download{
-        
+        margin-top: 75px;
         span{
             @include title();
             padding: 0 120px 0 20px ;
