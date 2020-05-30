@@ -65,6 +65,7 @@ nav{
             letter-spacing: .25em;
             border-bottom: 2px solid #fefefe;
             padding-bottom: 10px;
+            opacity: .75;
         }
         h1{
             font-family: $title;
@@ -208,7 +209,7 @@ main{
     }
 
     .reviews{
-        padding: 75px;
+        padding: 75px 0;
 
         .single-review{
             width: 100%;
@@ -224,5 +225,136 @@ main{
             }
         }
 
+        .review-items{
+            margin-top: 75px;
+            
+            span{
+                @include title();
+            }
+
+            .wrapper{
+                @include flex(column, center, flex-start);
+
+                .review{
+                    width: 75%;
+                    margin-top: 50px;
+                    
+                    p{
+                        font-size: 14px;
+                        letter-spacing: .25em;
+                        line-height: 22px;
+                        padding-right: 25%;
+                    }
+
+                    span{
+                        border: none;
+                        font-size: 11px;
+                        opacity: .5;
+                        padding: 5px 0 0 0 !important;
+                    }
+    
+                    &:nth-child(even){
+                        align-self: flex-end;
+                        text-align: right;
+
+                        p{
+                            padding: 0 0 0 25%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .download{
+        
+        span{
+            @include title();
+            padding: 0 120px 0 20px ;
+
+            .span{
+                padding-top: 5px;
+                padding-left: 20px;
+                border-left: 7.5px solid $theme;
+            }
+        }
+
+        .wrapper{
+            margin-top: 75px;
+            padding-bottom: 75px;
+            @include flex(column, center, flex-start);
+
+            .android{
+                @include flex(row, center, center);
+                button{
+                    background: url('../img/play_store.png') center center no-repeat;
+                    background-size: cover;
+                    width: 220px;
+                    height: 70px;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: translate(0px, -2px);
+                    }
+        
+                    &:active{
+                        transform: translate(0px, 2px);
+                    }
+        
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                a{
+                    margin-left: 50px; 
+                    text-transform: uppercase;
+                    letter-spacing: .25em;
+                }
+            }
+            .apple{
+                margin-top: 50px;
+                @include flex(row, center, center);
+                button{
+                    background: url('../img/app store.png') center center no-repeat;
+                    background-size: cover;
+                    width: 220px;
+                    height: 70px;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: translate(0px, -2px);
+                    }
+        
+                    &:active{
+                        transform: translate(0px, 2px);
+                    }
+        
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                a{
+                    margin-left: 50px; 
+                    text-transform: uppercase;
+                    letter-spacing: .25em;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background: #121212;
+    width: 100%;
+    height: 150px;
+    padding: 150px 0;
+    @include flex(column, center, center);
+
+    span{
+        text-transform: uppercase;
+        font-family: $title;
+        font-size: 28px;
+        text-align: center;
+        opacity: .5;
     }
 }
